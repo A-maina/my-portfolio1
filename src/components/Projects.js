@@ -1,9 +1,12 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+// import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import safiriPhoto from "../assets/img/safiri-home-page.png";
+import simpleSocialMediaWebsitePhoto from "../assets/img/simple-interactive-social-media-website-home-page.png";
+import bnbMusicSchoolWebsitePhoto from "../assets/img/b&b-music-school-website-home-page.png";
+import financeManagerCLI from "../assets/img/finance-manager-cli.png";
+import flatdangoMovieTheater from "../assets/img/flatdango-movie-theatre-home-page.png";
+import shoppingListWebsite from "../assets/img/shopping-list-home-page.png";
+// import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -11,48 +14,48 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Safiri",
+      description: "A travel app designed to help users explore various destinations, submit reviews, and view a slideshow of attractive travel locations",
+      imgUrl: safiriPhoto,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Simple Interactive Social Media Website",
+      description: "My beginner attempt at creating a website clone of most of the social media apps we use with limited data",
+      imgUrl: simpleSocialMediaWebsitePhoto,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "B&B Music School Website",
+      description: "My first attempt as a programming beginner at creating a website for BnB Music School which aspires to mould young musicians into prodigies of the future",
+      imgUrl: bnbMusicSchoolWebsitePhoto,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Finance Manager CLI",
+      description: "A finance manager to help in keeping track of one's expenses, income and manipulate them appropriately",
+      imgUrl: financeManagerCLI,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Flatdango Movie Theater",
+      description: "A simple mini web application that allows one to see a menu of movies, display its details and buy a ticket",
+      imgUrl: flatdangoMovieTheater,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Shopping List",
+      description: "A mini web application which takes in items and displays the items entered which can then be manipulated in various ways",
+      imgUrl: shoppingListWebsite,
     },
   ];
 
   return (
     <section className="project" id="projects">
-      <Container>
+      {/* <Container>
         <Row>
-          <Col size={12}>
+          <Col size={12}> */}
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
+                {/* <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
                       <Nav.Link eventKey="first">Tab 1</Nav.Link>
@@ -66,7 +69,8 @@ export const Projects = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
+                      <Row> */}
+                      <div id="project-tiles">
                         {
                           projects.map((project, index) => {
                             return (
@@ -77,7 +81,8 @@ export const Projects = () => {
                             )
                           })
                         }
-                      </Row>
+                        </div>
+                      {/* </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
@@ -86,13 +91,13 @@ export const Projects = () => {
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                   </Tab.Content>
-                </Tab.Container>
+                </Tab.Container> */}
               </div>}
             </TrackVisibility>
-          </Col>
+          {/* </Col>
         </Row>
-      </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      </Container> */}
+      {/* <img className="background-image-right" src={colorSharp2} alt=""></img> */}
     </section>
   )
 }
