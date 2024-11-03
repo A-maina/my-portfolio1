@@ -94,7 +94,7 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? 'animate__animated header-img' : ''
+                    isVisible ? 'header-img-container' : ''
                   }
                 >
                   <img src={headerImg} alt="Header Img" />
