@@ -17,31 +17,37 @@ export const Projects = () => {
       title: "Safiri",
       description: "A travel app designed to help users explore various destinations, submit reviews, and view a slideshow of attractive travel locations",
       imgUrl: safiriPhoto,
+      webUrl: "https://safiri-phase-4-project.vercel.app/"
     },
     {
       title: "Simple Interactive Social Media Website",
       description: "My beginner attempt at creating a website clone of most of the social media apps we use with limited data",
       imgUrl: simpleSocialMediaWebsitePhoto,
+      webUrl: "https://phase-1-project-rho.vercel.app/"
     },
     {
       title: "B&B Music School Website",
       description: "My first attempt as a programming beginner at creating a website for BnB Music School which aspires to mould young musicians into prodigies of the future",
       imgUrl: bnbMusicSchoolWebsitePhoto,
+      webUrl: "https://markbkiunga.github.io/BnB-Music-School-Website/"
     },
     {
       title: "Finance Manager CLI",
       description: "A finance manager to help in keeping track of one's expenses, income and manipulate them appropriately",
       imgUrl: financeManagerCLI,
+      webUrl: "https://github.com/Markbkiunga/phase-3-project"
     },
     {
       title: "Flatdango Movie Theater",
       description: "A simple mini web application that allows one to see a menu of movies, display its details and buy a ticket",
       imgUrl: flatdangoMovieTheater,
+      webUrl: "https://week-3-code-challenge-phi.vercel.app/"
     },
     {
       title: "Shopping List",
       description: "A mini web application which takes in items and displays the items entered which can then be manipulated in various ways",
       imgUrl: shoppingListWebsite,
+      webUrl: "https://markbkiunga.github.io/Week-2-Code-Challenge/"
     },
   ];
 
