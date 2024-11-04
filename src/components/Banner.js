@@ -106,7 +106,8 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div className={isVisible ? 'header-img-container' : ''}>
+                // Visibility to persist
+                <div className={isVisible ? 'header-img-container' : 'header-img-container'}> 
                   <img src={headerImg} alt="Header Img" />
                 </div>
               )}
