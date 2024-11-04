@@ -156,7 +156,7 @@ span.navbar-text {
 .social-icon a img {
   width: 40%;
   z-index: 1;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;;
 }
 .social-icon a:hover img {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
@@ -604,7 +604,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  background-color: #121212;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -669,9 +669,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
-.footer {
-  background: linear-gradient(90.21deg, #6e5541 -5.91%, #536a79 111.58%);
-}
+
 .footer img {
   width: 26%;
 }
@@ -681,4 +679,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.logo{
+  border-radius: 20px;;
 }
