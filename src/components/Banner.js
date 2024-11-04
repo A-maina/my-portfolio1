@@ -71,7 +71,7 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                      data-rotate="['Software Engineer', 'Aspiring Data Scientist/Analyst' ]"
                     >
                       <span className="wrap">{text}</span>
                     </span>
@@ -84,7 +84,14 @@ export const Banner = () => {
                     software development, AI, and tech innovation where I can
                     continue to grow and make a meaningful impact.
                   </p>
-                  <button onClick={() => console.log('connect')}>
+                  <button
+                    onClick={() => {
+                      const connectSection = document.getElementById('connect');
+                      if (connectSection) {
+                        connectSection.scrollIntoView();
+                      }
+                    }}
+                  >
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>
@@ -94,11 +101,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? 'header-img-container' : ''
-                  }
-                >
+                <div className={isVisible ? 'header-img-container' : ''}>
                   <img src={headerImg} alt="Header Img" />
                 </div>
               )}

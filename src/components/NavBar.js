@@ -34,7 +34,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" class="logo"/>
+            <img src={logo} alt="Logo" class="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -84,7 +84,15 @@ export const NavBar = () => {
                 </a>
               </div>
               <HashLink to="#connect">
-                <button className="vvd">
+                <button
+                  className="vvd"
+                  onClick={() => {
+                    const connectSection = document.getElementById('connect');
+                    if (connectSection) {
+                      connectSection.scrollIntoView();
+                    }
+                  }}
+                >
                   <span>Let’s Connect</span>
                 </button>
               </HashLink>
