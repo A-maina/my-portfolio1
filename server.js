@@ -9,7 +9,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
-app.listen(5555, () => console.log('Server Running'));
+const PORT = process.env.PORT || 5555;
+app.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
